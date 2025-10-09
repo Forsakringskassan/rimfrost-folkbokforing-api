@@ -1,1 +1,1 @@
-include "example-jaxrs-spec", "example-spec"
+include "rimfrost-folkbokforing-api-jaxrs-spec", "rimfrost-folkbokforing-api-spec"
