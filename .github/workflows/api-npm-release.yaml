@@ -7,3 +7,4 @@ jobs:
     uses: Forsakringskassan/.github/.github/workflows/bundle-api-npm-release.yaml@main
     secrets:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
