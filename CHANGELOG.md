@@ -1,3 +1,9 @@
+## 1.1.0 (2025-10-10)
+
+### Features
+
+-  publish till gemensamt repo ([ae281](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/ae281c5bda5ad5b) Tomas Bjerre)  
+
 ## 1.0.0 (2025-10-09)
 
 ### Breaking changes
