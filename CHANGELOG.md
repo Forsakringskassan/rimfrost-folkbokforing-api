@@ -1,3 +1,13 @@
+## Unreleased ()
+
+### Other changes
+
+**Tagging api with SocialSecurityController**
+
+
+[be914](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/be91491c37d0b8c) Ulf Slunga *2025-10-13 09:18:56*
+
+
 ## 1.4.0 (2025-10-13)
 
 ### Features
