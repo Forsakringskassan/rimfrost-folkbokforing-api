@@ -1,3 +1,22 @@
+## 1.4.1 (2025-10-13)
+
+### Bug Fixes
+
+-  trigger bumped patch version ([f360d](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/f360d5f2b96b343) Ulf Slunga)  
+
+### Other changes
+
+**Bumping version to 1.5.0**
+
+
+[b67be](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/b67bec1a5fa2512) Ulf Slunga *2025-10-13 10:18:38*
+
+**Tagging api with SocialSecurityController**
+
+
+[be914](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/be91491c37d0b8c) Ulf Slunga *2025-10-13 09:18:56*
+
+
 ## Unreleased ()
 
 ### Other changes
