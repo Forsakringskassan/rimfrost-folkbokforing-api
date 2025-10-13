@@ -7,6 +7,7 @@ info:
 paths:
   /population_registration/{social_security_nr}:
     get:
+      tags: [SocialSecurityController]
       summary: Check if a person has population registration in Sweden
       description: Returns true if person has population registration in Sweden
       parameters:
