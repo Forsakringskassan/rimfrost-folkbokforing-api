@@ -1,3 +1,9 @@
+## 1.4.2 (2025-10-13)
+
+### Bug Fixes
+
+-  rename api tag to PopulationRegistrationController ([7a872](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/7a872333cc9cebc) Ulf Slunga)  
+
 ## 1.4.1 (2025-10-13)
 
 ### Bug Fixes
