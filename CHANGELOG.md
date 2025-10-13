@@ -1,3 +1,22 @@
+## 1.3.0 (2025-10-13)
+
+### Features
+
+-  **deps**  update dependency jakarta.annotation:jakarta.annotation-api to v3 ([cc528](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/cc528a384e9e75c) renovate[bot])  
+
+### Bug Fixes
+
+-  **deps**  update jackson monorepo ([7e9a4](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/7e9a4fadbbdff81) renovate[bot])  
+-  **deps**  update dependency jakarta.validation:jakarta.validation-api to v3.1.1 ([e401a](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/e401a4225872ed4) renovate[bot])  
+
+### Other changes
+
+**English instead of swedish**
+
+
+[8934b](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/8934b551b6b08e5) Ulf Slunga *2025-10-10 12:17:57*
+
+
 ## 1.2.0 (2025-10-10)
 
 ### Features
