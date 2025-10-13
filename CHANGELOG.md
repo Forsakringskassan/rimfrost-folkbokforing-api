@@ -1,3 +1,9 @@
+## 1.4.0 (2025-10-13)
+
+### Features
+
+-  **deps**  update dependency jakarta.ws.rs:jakarta.ws.rs-api to v4 ([3d6c1](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/3d6c1b18a106325) renovate[bot])  
+
 ## 1.3.0 (2025-10-13)
 
 ### Features
