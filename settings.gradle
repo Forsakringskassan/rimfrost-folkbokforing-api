@@ -1,1 +1,9 @@
-include "rimfrost-folkbokforing-api-jaxrs-spec", "rimfrost-folkbokforing-api-spec"
+pluginManagement{
+    repositories { gradlePluginPortal(); mavenCentral()}
+    plugins {
+        id 'io.quarkus' version '3.28.1'
+    }
+}
+
+include "rimfrost-folkbokforing-api-jaxrs-spec", "rimfrost-folkbokforing-api-spec", "rest-endpoints"
+

@@ -1,0 +1,55 @@
+openapi: 3.0.3
+info:
+  description: Check if a person has population registration in Sweden
+  title: Population registration API
+  version: 1.0.0
+servers:
+- url: /
+paths:
+  /population_registration/{social_security_nr}:
+    get:
+      description: Returns true if person has population registration in Sweden
+      operationId: getPopulationRegistrationBySsn
+      parameters:
+      - description: Swedish social security number 12 digits
+        explode: false
+        in: path
+        name: social_security_nr
+        required: true
+        schema:
+          example: 19990101-0123
+          pattern: "^\\d{10}-\\d{4}$"
+          type: string
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              examples:
+                valid:
+                  summary: Person has population registration in Sweden
+                  value:
+                    result: true
+                invalid:
+                  summary: Person has no population registration in Sweden
+                  value:
+                    result: false
+              schema:
+                $ref: "#/components/schemas/getPopulationRegistrationBySsn_200_response"
+          description: Request performed successfully
+        "400":
+          description: Bad request (e.g. illegal format of social_security_nr)
+      summary: Check if a person has population registration in Sweden
+      tags:
+      - PopulationRegistrationController
+components:
+  schemas:
+    getPopulationRegistrationBySsn_200_response:
+      example:
+        result: true
+      properties:
+        result:
+          description: Population registration status
+          example: true
+          type: boolean
+      type: object

@@ -17,6 +17,10 @@ buildscript {
   }
 }
 
+plugins{
+    id 'io.quarkus' version '3.28.1' apply false
+}
+
 apply plugin: "se.fk.gradle.bundle-openapi"
 
 allprojects {
@@ -44,4 +48,34 @@ project("rimfrost-folkbokforing-api-jaxrs-spec",{
 		compileOnly 'com.fasterxml.jackson.core:jackson-annotations:2.20'
 		compileOnly 'com.fasterxml.jackson.core:jackson-core:2.20.0'
 	}
+})
+
+project("rest-endpoints", {
+    apply plugin: 'io.quarkus'
+    tasks.withType(Test).configureEach { enabled = false }
+    tasks.matching { it.name.toLowerCase().contains("quarkustest") }.configureEach { enabled = false }
+    sourceSets { test { java.setSrcDirs([]); resources.setSrcDirs([]) } }
+    repositories{ mavenCentral() }
+    fkOpenApi{
+        generatorName.set("jaxrs-spec")
+    }
+
+    dependencies{
+        implementation platform("io.quarkus.platform:quarkus-bom:3.28.1")
+
+        compileOnly 'jakarta.ws.rs:jakarta.ws.rs-api'
+        compileOnly 'jakarta.annotation:jakarta.annotation-api'
+        compileOnly 'jakarta.validation:jakarta.validation-api'
+        compileOnly 'com.fasterxml.jackson.core:jackson-databind'
+        compileOnly 'com.fasterxml.jackson.core:jackson-annotations'
+        compileOnly 'com.fasterxml.jackson.core:jackson-core'
+
+        // Quarkus
+        implementation 'io.quarkus:quarkus-arc'
+        implementation 'io.quarkus:quarkus-rest'
+        implementation 'io.quarkus:quarkus-rest-jackson'
+        implementation 'io.quarkus:quarkus-smallrye-openapi'
+        testImplementation 'io.quarkus:quarkus-junit5'
+        testImplementation 'io.rest-assured:rest-assured'
+    }
 })
