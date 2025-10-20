@@ -1,3 +1,12 @@
+## 1.4.3 (2025-10-20)
+
+### Bug Fixes
+
+-  format of persnr ([409b5](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/409b5e307d27813) Ulf Slunga)  
+
+### Dependency updates
+
+- gradle-conventions ([d147b](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/d147bcb8f19e13a) Tomas Bjerre)  
 ## 1.4.2 (2025-10-13)
 
 ### Bug Fixes
