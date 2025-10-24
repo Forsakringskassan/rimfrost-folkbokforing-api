@@ -1,3 +1,12 @@
+## 1.4.4 (2025-10-24)
+
+### Bug Fixes
+
+-  update readme.md to point to correct link ([3d0f0](https://github.com/Forsakringskassan/rimfrost-folkbokforing-api/commit/3d0f0812753b0fa) David Söderberg)  
+
+### Other changes
+
+
 ## Unreleased ()
 
 ### Other changes
