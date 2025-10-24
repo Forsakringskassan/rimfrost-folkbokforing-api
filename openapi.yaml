@@ -1,27 +1,27 @@
 openapi: 3.0.3
 info:
-  title: Population registration API
+  title: Folkbokföring API
   version: 1.0.0
-  description: Check if a person has population registration in Sweden
+  description: API för att tillhandahålla folkbokföringsstatus för givet personnummer
 
 paths:
-  /population_registration/{social_security_nr}:
+  /folkbokforing/{persnr}:
     get:
-      tags: [PopulationRegistrationController]
-      summary: Check if a person has population registration in Sweden
-      description: Returns true if person has population registration in Sweden
+      tags: [FolkbokforingController]
+      summary: Kolla om personen är folkbokförd i Sverige
+      description: Returnerar true/false beroende på om personen är folkbokförd i Sverige
       parameters:
-        - name: social_security_nr
+        - name: persnr
           in: path
           required: true
-          description: Swedish social security number 12 digits
+          description: Svenskt personnummer, 12 siffror med bindestreck (YYYYMMDD-XXXX)
           schema:
             type: string
             pattern: '^\d{8}-\d{4}$'
             example: "19990101-0123"
       responses:
         '200':
-          description: Request performed successfully
+          description: Förfrågan utförd OK
           content:
             application/json:
               schema:
@@ -29,16 +29,16 @@ paths:
                 properties:
                   result:
                     type: boolean
-                    description: Population registration status
+                    description: Folkbokföringsstatus
                     example: true
               examples:
                 valid:
-                  summary: Person has population registration in Sweden
+                  summary: Personen är folkbokförd i Sverige
                   value:
                     result: true
                 invalid:
-                  summary: Person has no population registration in Sweden
+                  summary: Personen är ej folkbokförd i Sverige
                   value:
                     result: false
         '400':
-          description: Bad request (e.g. illegal format of social_security_nr)
+          description: Felaktig förfrågan (t.ex. fel format i personnr)
