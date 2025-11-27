@@ -1,3 +1,27 @@
+## 1.5.0 (2025-11-27)
+
+### Bug Fixes
+
+-  **deps**  update jackson monorepo to v2.20.1 ([92a30](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/92a308663e05a2c) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.1 ([d71c2](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/d71c25475dae81d) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.18.0 ([b72e0](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/b72e038a1e78ef6) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.17.5 ([acb41](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/acb4153e268f902) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.17.4 ([54b22](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/54b22b1e5810ea6) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.17.2 ([51fd5](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/51fd5bfc3d98f97) renovate[bot])  
+-  **deps**  update dependency se.fk.gradle:gradle-conventions to v1.17.1 ([a38e2](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/a38e2f6edabfc5d) renovate[bot])  
+
+### Dependency updates
+
+- update gradle to v9.2.1 ([fd798](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/fd798f93a486f18) renovate[bot])  
+- update gradle to v9.2.0 ([d107c](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/d107c2b78866d11) renovate[bot])  
+### Other changes
+
+**Remove CODEOWNERS entry for @tomasbjerre**
+
+
+[29589](https://github.com/Forsakringskassan/rimfrost-service-folkbokforing-openapi/commit/29589b71cf007cc) Tomas Bjerre *2025-10-28 13:10:12*
+
+
 ## 1.4.4 (2025-10-24)
 
 ### Bug Fixes
